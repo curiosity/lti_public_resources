@@ -42,7 +42,7 @@ var LtiAppBrowseController = Ember.ObjectController.extend({
         _this.set('items', browsable.get('items'));
       },
       function(err) {
-        console.log(err);
+        //console.log(err);
         _this.set('isLoaded', true);
       }
     );

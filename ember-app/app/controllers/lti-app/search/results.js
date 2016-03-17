@@ -24,6 +24,7 @@ var LtiAppSearchResultsController = Ember.ArrayController.extend({
       this.set('isLoaded', false);
       this.clear();
 
+      debugger;
       var search = Search.create({
         toolId: this.get('ltiApp.toolId'),
         searchText: this.get('searchText')

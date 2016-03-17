@@ -8,3 +8,6 @@ vimeo:
   access_token_secret: 147a547eb83f96a5cb95f88d4588e8c038e695b5
 quizlet:
   client_id: rTHYaHnXTz
+curiosity:
+  api_key: API_KEY
+  api_client: API_CLIENT

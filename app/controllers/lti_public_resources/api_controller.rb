@@ -64,8 +64,10 @@ module LtiPublicResources
       host = request.scheme + "://" + request.host_with_port
       tool_id = 'public_resources'
 
-      if params[:id]
-        tool_id  = params[:id]
+      id = 'curiosity'
+      #if params[:id]
+      if id
+        tool_id  = id 
         lti_app  = @apps[tool_id.to_sym]
         name = lti_app[:name]
         description = lti_app[:description]

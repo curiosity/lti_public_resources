@@ -19,7 +19,8 @@ module LtiPublicResources
           vimeo:        APR::Drivers::Vimeo.new(settings[:vimeo]),
           schooltube:   APR::Drivers::Schooltube.new,
           khan_academy: APR::Drivers::KhanAcademy.new,
-          quizlet:      APR::Drivers::Quizlet.new(settings[:quizlet])
+          quizlet:      APR::Drivers::Quizlet.new(settings[:quizlet]),
+          curiosity:    APR::Drivers::Curiosity.new(settings[:curiosity])
         }
       else
         raise "Warning: missing config file #{config_file}."
