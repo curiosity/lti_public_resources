@@ -26,6 +26,10 @@ var LtiAppRoute = Ember.Route.extend({
         return_type: returnType.getJson(),
         launch_params: Em.ENV.LAUNCH_PARAMS
       };
+      /* globals ga: false */
+      ga('send', 'event', 'Memes', 'embed', returnType.url);
+
+
       ajax({
         type: 'POST',
         url: url,
@@ -33,6 +37,8 @@ var LtiAppRoute = Ember.Route.extend({
         data: postData
       }).then(
         function(data) {
+
+
           if (data.hasOwnProperty('redirectUrl')) {
             window.location.replace(data.redirectUrl);
           } else {
