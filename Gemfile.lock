@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/battand/active_public_resources.git
-  revision: ad0298359af45beace4940560f86e2f2d416c733
+  revision: 7cd1b2d3b071a9e74e8c647d20294121054da4ce
   specs:
     active_public_resources (0.2.2)
       activemodel (>= 4.0.0)
@@ -102,8 +102,8 @@ GEM
       oauth (~> 0.4.5)
     iso8601 (0.8.7)
     json (1.8.3)
-    mail (2.6.3)
-      mime-types (>= 1.16, < 3)
+    mail (2.6.4)
+      mime-types (>= 1.16, < 4)
     method_source (0.8.2)
     mime-types (1.25.1)
     mini_portile2 (2.0.0)

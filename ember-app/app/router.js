@@ -16,4 +16,14 @@ Router.map(function() {
   this.route('helper-test');
 });
 
+Router.reopen({
+  notifyGoogleAnalytics: function() {
+    /* globals ga: false */
+    return ga('send', 'pageview', {
+        'page': this.get('url'),
+        'title': this.get('url')
+      });
+  }.on('didTransition')
+});
+
 export default Router;
